@@ -1,0 +1,6 @@
+Start all daemons and yarns using start-all.cmd
+
+Make a directory using:  hdfs dfs -mkdir hdfs://localhost:9000/user/Hadoop/twitter_data 
+
+load data into hadoop using: bin/flume-ng agent --conf ./conf/ -f conf/twitter.conf 
+Dflume.root.logger=DEBUG,console -n TwitterAgent
